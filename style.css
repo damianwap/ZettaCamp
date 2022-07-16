@@ -1,0 +1,163 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: linear-gradient(to bottom, #272E5A 0%, #272E5A 50%, #F5F5F5 50%, #F5F5F5 100%);
+    height: auto;
+}
+::selection {
+    background-color: black;
+    color: white;
+}
+
+footer h1{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.faq{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 100px;
+}
+
+.question{
+    flex-basis: calc(100% / 2);
+    padding: 20px;
+    margin-top: 100px;
+}
+
+#pricing {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 100px;
+    margin-top: 50px;
+    /* border: 2px solid; */
+}
+.single-card {
+    flex-basis: calc(100% / 3);
+    padding: 20px;
+    /* border: 2px solid red; */
+}
+.single-card .wrapper {
+    background-color: white;
+    height: 90%;
+    padding: 30px;
+    box-shadow: 3px 5px 10px rgba(0,0,0,0.1);
+    transition: .3s;
+}
+
+.single-card .wrapper h1{
+    font-size: 80px;
+    text-align: center;
+}
+
+#description{
+    color: white;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+
+#description h1{
+    margin: 0px 0px 50px 0px;
+}
+
+.single-card .header{
+    background-color: #3C4252;
+    height: 50px;
+    color: white;
+    text-align: left;
+    text-transform: uppercase;
+    display: flex; 
+}
+
+.single-card .header h3{
+    margin: 0px 20px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.single-card:hover{
+    transform: scale(1.1);
+}
+
+.single-card-zoom{
+    flex-basis: calc(100% / 3);
+    padding: 20px;
+    transform: scale(1.1);
+}
+
+.single-card h3 {
+    text-align: center;
+    font-weight: 500;
+}
+.single-card h1 {
+    margin: 20px 0px;
+    font-size: 30px;
+}
+.single-card li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.single-card i.fas {
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 10px;
+    margin-right: 10px;
+}
+.single-card span {
+    font-size: 12px;
+    font-weight: 500;
+}
+.single-card button {
+    height: 40px;
+    width: 100%;
+    background-color: #039BE5;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .5px;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+.single-card button:hover {
+    background: black;
+}
+.disable span {
+    color: #c4c4c4;
+}
+.disable i.fas {
+    background: #c4c4c4;
+}
+@media screen and (max-width : 992px) {
+    #pricing {
+        padding: 0px 20px;
+    }    
+}
+@media screen and (max-width : 768px) {
+    .single-card {
+        flex-basis: calc(100% / 2);
+    }    
+}
+@media screen and (max-width : 576px) {
+    .single-card {
+        flex-basis: calc(100%);
+    }    
+}
